@@ -1,0 +1,147 @@
+/* Body: Use flex to center content and ensure full viewport height */
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    min-height: 100vh;
+  }
+  
+  /* Page Container: Use relative units and max-width rather than fixed min sizes */
+  .page-container {
+    width: 90%;
+    max-width: 1200px;  /* The container will not exceed 1200px even on larger screens */
+    padding: 60px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.59);
+
+    margin: 20px; /* Adds some spacing around on smaller screens */
+  }
+  
+  /* Media Queries: Adjust layout on smaller screens if needed */
+  @media (max-width: 768px) {
+    .page-container {
+      padding: 40px;
+      width: 95%;
+    }
+  }
+.input-container{
+    display: flex;
+    gap:70px;
+    justify-content:center;
+    align-items:center;
+    margin-bottom: 20px;
+    padding:20px 20px;
+    font-size:25px;
+    font-weight: bold;
+}
+
+.input-field input,
+.input-field select {
+  width: 100%;
+  padding: 20px;
+  font-size: 1.2rem;
+  height: 45px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+
+button:hover{
+    transform: translateY(-5px);
+    background: #e50914;
+    color: black;
+}
+.product-name-price{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    gap: 10px;
+
+}
+
+.recommendations-button{
+    font-size: 1.5rem;
+    font-weight:bold;
+    border-radius: 5px;
+    padding:10px 10px;
+    background:black;
+    border:none;
+    box-shadow: 0 2px 10px rgba(255, 255, 255, 0.59);
+}
+
+.page-title{
+    font-size: 60px;
+    margin-top: 10px;
+    background: linear-gradient(45deg, #e50914,rgb(145, 7, 14));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+
+}
+.instructions{
+    font-size: 40px;
+    font-weight: bold;
+    margin:none;
+
+}
+
+.description{
+    display:flex;
+    justify-content: flex-end;
+    height:50%;
+    width:50%;
+}
+
+.movie-card{
+    display:block;
+    font-size: 1rem;
+    border:1px solid;
+    padding: 20px 20px;
+    border-radius: 10px;
+}
+
+.movie-card h2{
+    text-decoration:underline;
+    font-size:50px;
+}
+
+.movie-card p{
+    font-size: 30px;
+}
+.recommendations-list ul {
+    list-style: none;
+    padding: 20px;
+    margin: 20px auto;
+    width: 80%;
+    
+  }
+  
+  .recommendation-item {
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 25px;
+    background:black;
+    font-weight:bold;
+    
+  }
+  
+  
+
+.recommendation-item:hover{
+    color:black;
+    cursor:pointer;
+    background: #e50914;
+    transform: translateX(-5px);
+    border:none;
+}
